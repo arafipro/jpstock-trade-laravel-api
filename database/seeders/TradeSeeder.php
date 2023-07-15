@@ -13,7 +13,49 @@ class TradeSeeder extends Seeder
     public function run(): void
     {
         DB::table('trades')->insert([
-            'code' => 7201,
+            'code' => 1301,
+            'buy_sell' => '買',
+            'shares' => 100,
+            'price' => 500.0,
+            'trading_date' => '20230404',
+            'credit_ratio' => 1.0,
+            'lender_ratio' => 1.0,
+            'memo' => 'memo',
+            'company_id' => 1,
+            'chart_img' => 'image.png',
+            'per' => 10.0,
+            'pbr' => 1.0,
+        ]);
+        DB::table('trades')->insert([
+            'code' => 1721,
+            'buy_sell' => '買',
+            'shares' => 100,
+            'price' => 500.0,
+            'trading_date' => '20230404',
+            'credit_ratio' => 1.0,
+            'lender_ratio' => 1.0,
+            'memo' => 'memo',
+            'company_id' => 1,
+            'chart_img' => 'image.png',
+            'per' => 10.0,
+            'pbr' => 1.0,
+        ]);
+        DB::table('trades')->insert([
+            'code' => 1417,
+            'buy_sell' => '買',
+            'shares' => 100,
+            'price' => 500.0,
+            'trading_date' => '20230404',
+            'credit_ratio' => 1.0,
+            'lender_ratio' => 1.0,
+            'memo' => 'memo',
+            'company_id' => 1,
+            'chart_img' => 'image.png',
+            'per' => 10.0,
+            'pbr' => 1.0,
+        ]);
+        DB::table('trades')->insert([
+            'code' => 1766,
             'buy_sell' => '買',
             'shares' => 100,
             'price' => 500.0,
