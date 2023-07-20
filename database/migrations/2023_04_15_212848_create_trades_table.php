@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('code');
             $table->integer('shares');
             $table->float('price');
-            $table->timestamp('trading_date');
+            $table->date('trading_date');
             $table->string('buy_sell');
             $table->float('credit_ratio');
             $table->float('lender_ratio');
