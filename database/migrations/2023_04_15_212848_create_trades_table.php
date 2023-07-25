@@ -20,9 +20,9 @@ return new class extends Migration
             $table->string('buy_sell');
             $table->float('credit_ratio');
             $table->float('lender_ratio');
-            $table->text('memo');
+            $table->text('memo')->nullable();
             $table->integer('company_id');
-            $table->string('chart_img');
+            $table->string('chart_img')->nullable();
             $table->float('per');
             $table->float('pbr');
             $table->timestamps();
