@@ -15,6 +15,7 @@ class TradeResource extends JsonResource
             'buy_sell' => $this->buy_sell,
             'shares' => $this->shares,
             'price' => $this->price,
+            'all_price' => $this->price * $this->shares,
             'trading_date' => $this->trading_date,
             'credit_ratio' => $this->credit_ratio,
             'lender_ratio' => $this->lender_ratio,
