@@ -14,7 +14,7 @@ class TradeController extends Controller
      */
     public function index()
     {
-        return TradeResource::collection(Trade::all());
+        return TradeResource::collection(Trade::all()->sortBy("trading_date"));
     }
 
     /**

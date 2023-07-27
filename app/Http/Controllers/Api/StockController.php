@@ -14,7 +14,7 @@ class StockController extends Controller
      */
     public function index()
     {
-        return StockResource::collection(Stock::all());
+        return StockResource::collection(Stock::all()->sortBy("code"));
     }
 
     /**

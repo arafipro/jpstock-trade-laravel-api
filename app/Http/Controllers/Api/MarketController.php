@@ -14,7 +14,7 @@ class MarketController extends Controller
      */
     public function index()
     {
-        return MarketResource::collection(Market::all());
+        return MarketResource::collection(Market::all()->sortBy("market_id"));
     }
 
     /**
